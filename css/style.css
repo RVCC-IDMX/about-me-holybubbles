@@ -28,18 +28,38 @@ header {
 main {
     font-size: 18px;
     max-width: 1800px;
-    margin: 0 auto;
+    margin: 1em auto;
     text-align: center;
 }
 
-main section {
+main #avatar {
     color: #335C9E;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1em;
 }
 
-main section div {
+main #avatar div {
     display: inline-block;
     color: #000;
     height: 100%;
+}
+
+#video-container p {
+    margin-bottom: 4px;
+    text-decoration: underline;
+    font-size: larger;
+}
+
+#myVideo {
+    position: relative;
+    width: auto;
+    height: 600px;
+    margin-top: 0;
 }
 
 #hobbies {
