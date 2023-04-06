@@ -106,37 +106,47 @@
                 <fieldset>
                     <legend>Contact Form</legend>
 
-                    <label for="name">Name: </label>
-                    <input required type="text" name="name" placeholder="John Smith">
+                    <div id="contact-info">
+                        <p>
+                            <label for="name">Name: </label>
+                            <input required type="text" name="name" id="name" placeholder="John Smith">
+                        </p>
 
-                    <label for="email">Email: </label>
-                    <input required type="email" name="email" placeholder="example@gmail.com">
+                        <p>
+                            <label for="email">Email: </label>
+                            <input required type="email" name="email" id="email" placeholder="example@gmail.com">
+                        </p>
 
-                    <label for="telNumber">Telephone Number: </label>
-                    <input type="tel" name="telNumber" placeholder="(555)-555-5555">
+                        <p>
+                            <label for="telNumber">Phone Number: </label>
+                            <input type="tel" name="telNumber" id="telNumber" placeholder="(555)-555-5555">
 
-                    <select name="telType" id="telType">
-                        <option value="home">Home</option>
-                        <option value="cell">Cell</option>
-                    </select>
-                    <textarea name="msgBody" id="msgBody" cols="30" rows="10"></textarea>
+                            <select name="telType" id="telType">
+                                <option value="home">Home</option>
+                                <option value="cell">Cell</option>
+                            </select>
+                        </p>
+                    </div>
 
+                    <textarea name="msgBody" id="msgBody" placeholder="Leave a message..."></textarea>
 
-                    <p>Would you like a follow up message after receiving your message?</p>
+                    <div id="confirm">
+                        <p>Would you like a follow up message after receiving your message?</p>
 
-                    <ul>
-                        <li>
-                            <input type="radio" name="followUp" id="followUp-yes" value="yes">
-                            <label for="followUp">Yes </label>
-                        </li>
+                        <ul>
+                            <li>
+                                <input type="radio" name="followUp" id="followUp-yes" value="yes">
+                                <label for="followUp-yes">Yes</label>
+                            </li>
 
-                        <li>
-                            <input type="radio" name="followUp" id="followUp-no" value="no">
-                            <label for="followUp">No</label>
-                        </li>
-                    </ul>
+                            <li>
+                                <input type="radio" name="followUp" id="followUp-no" value="no">
+                                <label for="followUp-no">No</label>
+                            </li>
+                        </ul>
+                        <input id="submitBtn" type="submit" value="Submit">
+                    </div>
 
-                    <input type="submit" value="Submit">
                 </fieldset>
             </form>
         </section>

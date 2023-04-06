@@ -153,6 +153,92 @@ main #avatar div {
     ;
 }
 
+#contact {
+    width: 80%;
+    min-width: 350px;
+
+    margin: auto;
+
+    text-align: left;
+}
+
+#contact fieldset legend {
+    font-size: 1.25em;
+}
+
+
+#contact input,
+#contact textarea {
+    box-sizing: border-box;
+    font-size: 0.8em;
+
+    padding: 0.75em;
+
+    border-radius: 0.25em;
+    border: 1px solid #000;
+    outline: none;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    box-shadow: none;
+    box-shadow: 0px 0px 4px 2px #335C9E;
+}
+
+#contact fieldset {
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+}
+
+#contact fieldset #contact-info {
+    width: 45%;
+    min-width: 300px;
+}
+
+#contact fieldset #contact-info input {
+    margin-left: 5px;
+}
+
+#contact fieldset #contact-info select {
+    padding: 8px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    background-color: #fff;
+
+    border: 1px solid #000;
+    border-radius: 0.25em;
+}
+
+#contact fieldset textarea {
+    width: 45%;
+    min-width: 300px;
+}
+
+#contact fieldset #confirm {
+    width: 100%;
+    text-align: center;
+}
+
+#contact fieldset #confirm ul {
+    list-style-type: none;
+}
+
+#contact fieldset #confirm #submitBtn {
+    background-color: #5790EB;
+
+    padding: 0.5em;
+
+    font-size: 1em;
+}
+
+#contact fieldset #confirm #submitBtn:hover {
+    opacity: 80%;
+}
+
 footer {
     background-color: #529E7A;
     padding: 10px;
