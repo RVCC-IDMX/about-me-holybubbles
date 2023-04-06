@@ -32,7 +32,7 @@ main {
     text-align: center;
 }
 
-main #avatar {
+main #bio {
     color: #335C9E;
 
     display: flex;
@@ -43,7 +43,7 @@ main #avatar {
     gap: 1em;
 }
 
-main #avatar div {
+main #bio div {
     display: inline-block;
     color: #000;
     height: 100%;
@@ -97,22 +97,22 @@ main #avatar div {
 }
 
 
-#photo-gallery h2 {
+#gallery h2 {
     margin-bottom: 0.1em;
 }
 
-#photo-gallery figure {
+#gallery figure {
     position: relative;
     color: #fff;
     overflow: hidden;
 }
 
 
-#photo-gallery figure img {
+#gallery figure img {
     width: 100%;
 }
 
-#photo-gallery figure figcaption {
+#gallery figure figcaption {
     position: absolute;
     top: -150px;
 
@@ -126,11 +126,11 @@ main #avatar div {
 }
 
 
-#photo-gallery figure:hover figcaption {
+#gallery figure:hover figcaption {
     top: 0px;
 }
 
-#jekyll-book {
+#lit {
     text-align: left;
     width: 80%;
     min-width: 350px;
@@ -138,14 +138,14 @@ main #avatar div {
     margin: 0 auto;
 }
 
-#jekyll-book h2 {
+#lit h2 {
     width: fit-content;
     padding: 6px;
     border-bottom: 3px solid black;
     border-right: 3px solid black;
 }
 
-#jekyll-book div {
+#lit div {
     border: 1px solid #000;
     padding: 0 12px;
     margin-bottom: 0.5em;
@@ -246,12 +246,12 @@ footer {
 }
 
 @media screen and (min-width: 60em) {
-    #photo-gallery figure {
+    #gallery figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
 
-    #photo-gallery figure figcaption {
+    #gallery figure figcaption {
         position: initial;
 
         display: flex;
@@ -261,31 +261,31 @@ footer {
         margin-left: 1rem;
     }
 
-    #photo-gallery figure:hover figcaption {
+    #gallery figure:hover figcaption {
         top: unset;
     }
 
-    #jekyll-book div {
+    #lit div {
         max-width: 100%;
         columns: 40rem;
     }
 }
 
 @media screen and (min-width: 100em) {
-    #photo-gallery {
+    #gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #photo-gallery hr {
+    #gallery hr {
         display: none;
     }
 
-    #photo-gallery h2 {
+    #gallery h2 {
         grid-column: 1 /-1;
     }
 
-    #photo-gallery figure {
+    #gallery figure {
         display: block;
     }
 }
