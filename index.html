@@ -100,6 +100,46 @@
                     some strangling anguish; for his face was white and his voice, when he spoke, harsh and broken.</p>
             </div>
         </article>
+
+        <section id="contact">
+            <form name="contact-form" method="post" data-netlify="true">
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <label for="name">Name: </label>
+                    <input required type="text" name="name" placeholder="John Smith">
+
+                    <label for="email">Email: </label>
+                    <input required type="email" name="email" placeholder="example@gmail.com">
+
+                    <label for="telNumber">Telephone Number: </label>
+                    <input type="tel" name="telNumber" placeholder="(555)-555-5555">
+
+                    <select name="telType" id="telType">
+                        <option value="home">Home</option>
+                        <option value="cell">Cell</option>
+                    </select>
+                    <textarea name="msgBody" id="msgBody" cols="30" rows="10"></textarea>
+
+
+                    <p>Would you like a follow up message after receiving your message?</p>
+
+                    <ul>
+                        <li>
+                            <input type="radio" name="followUp" id="followUp-yes" value="yes">
+                            <label for="followUp">Yes </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="followUp" id="followUp-no" value="no">
+                            <label for="followUp">No</label>
+                        </li>
+                    </ul>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
     </main>
 
     <footer>
