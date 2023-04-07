@@ -51,12 +51,41 @@ main {
 
 /* navigation list */
 
+.navbar-links li {
+    list-style: none;
+    display: block;
+    padding: 0.5em 0;
+}
+
+
 
 /*  
  style all a tags in header 
  and then on hover
 */
 
+
+.navbar-links li a {
+    text-decoration: none;
+
+    color: whitesmoke;
+    background-color: #333;
+
+    font-size: 1.5rem;
+
+    padding: 1rem 1.25rem;
+    letter-spacing: 2px;
+
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.navbar-links li a:hover, 
+.navbar-links li a:focus {
+    color: #333;
+    background-color: whitesmoke; 
+    /* filter: invert(1); */
+}
 
 
 
