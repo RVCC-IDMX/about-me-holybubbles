@@ -107,18 +107,27 @@ main #bio div {
     overflow: hidden;
 }
 
+#gallery #gallery-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 #gallery figure img {
     width: 100%;
+    max-width: 320px;
 }
 
 #gallery figure figcaption {
     position: absolute;
-    top: -150px;
+    top: -75px;
 
-    height: 150px;
-    line-height: 150px;
+    height: 75px;
+    line-height: 75px;
+
     font-size: 2em;
+    
     width: 100%;
 
     background-color: rgba(0, 0, 0, 75%);
@@ -126,7 +135,7 @@ main #bio div {
 }
 
 
-#gallery figure:hover figcaption {
+#gallery #gallery-grid figure:hover figcaption {
     top: 0px;
 }
 
@@ -150,7 +159,6 @@ main #bio div {
     padding: 0 12px;
     margin-bottom: 0.5em;
     background-color: rgba(255, 255, 255, 75%);
-    ;
 }
 
 #contact {
@@ -246,25 +254,6 @@ footer {
 }
 
 @media screen and (min-width: 60em) {
-    #gallery figure {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    #gallery figure figcaption {
-        position: initial;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        margin-left: 1rem;
-    }
-
-    #gallery figure:hover figcaption {
-        top: unset;
-    }
-
     #lit div {
         max-width: 100%;
         columns: 40rem;
