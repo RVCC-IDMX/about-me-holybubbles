@@ -5,9 +5,11 @@
 ---
 
 ### Color Scheme
-Primary colors: `#335C9E`, `5790EB`
-Secodnary Colors: `#6EEBB0`
-Footer: `#529E7A`
+Primary colors:
+  - #335C9E 
+  - #5790EB
+Secondary Colors: #6EEBB0
+Footer: #529E7A
 --- 
 
 This website was made for an assignment from Web Dev 1 to be an example of the skills I've learned in regards to web development.
@@ -19,7 +21,7 @@ The following skills were used in this website.
 - Responsive Design
 - HTML Forms
 - Modern Web Development Practices
-- -Deploying website to third-party platform(Netlify)
+- Deploying website to third-party platform(Netlify)
 
 
 
