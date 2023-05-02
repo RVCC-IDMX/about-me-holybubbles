@@ -43,6 +43,8 @@ main {
 .logo img {
     height: 5vw;
     width: 5vw;
+
+    margin-right: 5px;
 }
 
 .logo h1 {
