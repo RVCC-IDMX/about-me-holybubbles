@@ -7,37 +7,74 @@ html {
  get rid of padding & sizing on body so
  header is at top
 */
-
-body {    
+html, body {    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* add some padding back to rest of page */
-
 main {
     padding: 2vw;
 }
 
 /* navbar */
-
 .navbar {
     background-color: #333;
     color: whitesmoke;
-    display: flex;
-    flex-direction: column;
+
     font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+
+    height: min-content;
+
+    text-align: center;
+    position: relative;
 }
 
-/* logo */
 
+/* logo */
 .logo {
-    padding-top: 10px;
+    background-color: #333;
+
+    padding: 0.5rem 1rem;
     
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
+}
+
+.logo .hamburger-icon {
+    width: 45px;
+
+    position: absolute;
+    right: 1em;
+    z-index: 11;
+}
+
+.logo .hamburger-icon span {
+    display: block;
+
+    width: 45px;
+    height: 4px;
+
+    margin-bottom: 8px;
+    border-radius: 15px;
+
+    background-color: #fff;
+
+    transition: all 1s;
+}
+
+.logo .hamburger-icon.closed span:nth-child(1) {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) translate(0, -2px);
+}
+.logo .hamburger-icon.closed span:nth-child(2) {
+    opacity: 0;
+}
+.logo .hamburger-icon.closed span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) translate(-3px, 3px);
 }
 
 .logo img {
@@ -52,6 +89,20 @@ main {
 }
 
 /* navigation list */
+.navbar-links{
+    position: absolute;
+    z-index: 10;
+
+    width: 100%;
+    background-color: #333;
+
+    top: -500px;
+    transition: top 1s;
+}
+
+.navbar-links.opened {
+    top: 0;
+}
 
 .navbar-links li {
     list-style: none;
@@ -59,14 +110,10 @@ main {
     padding: 0.5em 0;
 }
 
-
-
 /*  
  style all a tags in header 
  and then on hover
 */
-
-
 .navbar-links li a {
     text-decoration: none;
 
@@ -86,11 +133,7 @@ main {
 .navbar-links li a:focus {
     color: #333;
     background-color: whitesmoke; 
-    /* filter: invert(1); */
 }
-
-
-
 
 /* 
 media query for non-mobile nav bar
